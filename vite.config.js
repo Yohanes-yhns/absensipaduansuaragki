@@ -1,14 +1,7 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
+// https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/', // ⚠️ Penting untuk routing di Vercel
-  build: {
-    outDir: 'dist', // Folder output (default Vite)
-    emptyOutDir: true, // Bersihkan folder dist sebelum build
-  },
-  server: {
-    open: true // Buka browser otomatis saat dev
-  }
 })
