@@ -20,6 +20,12 @@ function App() {
             >
               Absensi
             </NavLink>
+            <NavLink 
+              to="/admin" 
+              className={({ isActive }) => isActive ? "navLink activeLink" : "navLink"}
+            >
+              Admin
+            </NavLink>
           </div>
         </div>
       </nav>
